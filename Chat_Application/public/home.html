@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+  <head>
+
+  <script>
+	function validateForm() 
+	{
+		var x = document.forms["form"]["username"].value;
+		if (x == null || x == "") 
+		{
+        	alert("Name must be filled out");
+        	return false;
+    	}
+	} 
+	$("#submit").click(function(event){
+		 event.preventDefault();
+	 
+	 	$('form').fadeOut(500);
+	 	$('.wrapper').addClass('form-success');
+	});
+	</script>
+
+    <meta charset="UTF-8">
+    <title>Chat login screen</title>
+    
+        <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+  <script src='js/jquery.min.js'></script>
+
+    <div class="wrapper">
+	<div class="container">
+		<h1>Welcome</h1>
+		
+		<form class="form" name="form" id="form" method="GET" action="chat.html" onsubmit="return validateForm()" >
+			<input type="text" id="name" name="username" placeholder="Username">
+			<button type="submit" id="submit">Login</button>
+		</form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+  </body>
+</html>

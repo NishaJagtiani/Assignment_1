@@ -1,0 +1,14 @@
+{
+  "name": "ChatRoom",
+  "version": "0.0.1",
+  "description": "My First Realtime chat system for CMU Assignment 1",
+  "author": "Nisha Jagtiani",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "express": "^2.10.1",
+    "mocha": "^2.2.5",
+    "qs": "*",
+    "socket.io": "^2.10.1",
+    "sqlite3": "^3.0.8"
+  }
+}
